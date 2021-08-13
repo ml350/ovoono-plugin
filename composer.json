@@ -1,0 +1,17 @@
+{
+    "name": "ovoono_plugin/ovoono_plugin",
+    "description": "OvoOno, heart and mind in plugin form.",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Emel Rizvanović",
+            "email": "admin@devemel.pro"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"ZENDEVPLUGIN\\": "./inc"}
+    }
+}
