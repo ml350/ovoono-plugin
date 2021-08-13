@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ZENDEVPLUGIN\\' => array($baseDir . '/inc'),
+    'OVOONOPLUGIN\\' => array($baseDir . '/inc'),
 );

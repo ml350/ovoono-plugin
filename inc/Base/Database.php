@@ -1,6 +1,6 @@
 <?php
 /**
- *  OvoOno Plugin 
+ *  OvoOnoPlugin 
  */
 
  namespace OVOONOPLUGIN\Base;

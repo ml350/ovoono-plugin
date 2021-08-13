@@ -1,6 +1,6 @@
 <?php
 /**
-* OvoOno Plugin
+* OvoOnoPlugin
 */
 
 namespace OVOONOPLUGIN\Base;
@@ -21,6 +21,7 @@ class Hooks {
     public static function registerHooks() {
         // example how to use hook
         //add_action( 'name_of_hook' ,array('\OVOONOPLUGIN\Base\filename', 'funciton_name'), 10,1 );
+        add_filter( 'woocommerce_get_price_html', array('\OVOONOPLUGIN\Base\OvoOnoActions', 'hide_prices_for_nonusers'), 10,1);
  
     }
 }

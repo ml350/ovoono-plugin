@@ -9,7 +9,7 @@ Version: 1.0.0
 Author: Emel Rizvanovic
 Author URI: https://devemel.pro
 License: GPLv2 or later
-Text Domain: OvoOno Plugin
+Text Domain: OvoOnoPlugin
 */
 
 
@@ -25,8 +25,8 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
  * The code that runs during plugin activation
  */
 function activate_ovoono_plugin() {
-	OVOONOPLUGIN\Base\Activate::activate();
-	OVOONOPLUGIN\Base\Database::createDatabase();
+	\OVOONOPLUGIN\Base\Activate::activate();
+	\OVOONOPLUGIN\Base\Database::createDatabase();
 }
 register_activation_hook( __FILE__, 'activate_ovoono_plugin' );
 
@@ -34,7 +34,7 @@ register_activation_hook( __FILE__, 'activate_ovoono_plugin' );
  * The code that runs during plugin deactivation
  */
 function deactivate_ovoono_plugin() {
-	OVOONOPLUGIN\Base\Deactivate::deactivate();
+	\OVOONOPLUGIN\Base\Deactivate::deactivate();
 	//OVOONOPLUGIN\Base\Database::deleteTable();
 }
 register_deactivation_hook( __FILE__, 'deactivate_ovoono_plugin' );

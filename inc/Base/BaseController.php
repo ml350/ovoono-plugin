@@ -2,7 +2,7 @@
 /**
  * @package  OvoOnoPlugin
  */
-namespace ZENDEVPLUGIN\Base;
+namespace OVOONOPLUGIN\Base;
 
 class BaseController
 {
